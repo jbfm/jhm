@@ -10,6 +10,7 @@ a:visited,
 a:active {
 	color: black;
 	text-decoration: none;
+	outline: none;
 }
 
 :root {
@@ -154,7 +155,7 @@ footer {
 	}
 
 	#paintings {
-		border: 15px solid white;
+		border: 15px solid transparent;
 		height: auto;
 	}
 
