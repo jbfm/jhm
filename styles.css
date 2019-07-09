@@ -33,6 +33,7 @@ body {
 	grid-template-columns: var(--aside-width) 1fr;
 	grid-template-rows: auto 1fr auto;
 	align-content: start;
+	background: rgb(232, 230, 230);
 }
 
 /* View options */
@@ -86,7 +87,7 @@ aside h1 span {
 	gap: var(--gap);
 	height: 100vh;
 	overflow: auto;
-	border: 30px solid white;
+	border: 30px solid transparent;
 	align-items: start;
 	justify-content: start;
 	position: relative;
