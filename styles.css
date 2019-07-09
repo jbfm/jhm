@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Courier New", Courier, monospace;
+	box-sizing: border-box;
+}
+
+a,
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+:root {
+	--aside-width: 300px;
+	--columns: 5;
+}
+
+@media all and (max-width: 980px) {
+	:root {
+		--columns: 3;
+		--aside-width: 250px;
+	}
+}
+
+body {
+	display: grid;
+	grid-template-areas:
+		"view-options paintings"
+		"author paintings"
+		"footer paintings";
+	grid-template-columns: var(--aside-width) 1fr;
+	grid-template-rows: auto 1fr auto;
+	align-content: start;
+}
+
+/* View options */
+.view-options {
+	grid-area: view-options;
+	list-style: none;
+	display: grid;
+	grid-auto-flow: column;
+	gap: 15px;
+	justify-content: end;
+	padding: 30px 0;
+	min-height: 0;
+}
+
+.view-options a {
+	color: rgb(80, 80, 80);
+}
+
+.view-options .active a {
+	color: rgb(30, 30, 30);
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+/* Author Info */
+aside {
+	grid-area: author;
+	width: var(--aside-width);
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	padding-right: 0;
+}
+
+aside h1 {
+	font-weight: 400;
+	text-align: center;
+	width: 100%;
+}
+
+aside h1 span {
+	display: block;
+}
+
+/* Paintings */
+#paintings {
+	--gap: 100px;
+
+	grid-area: paintings;
+	display: grid;
+	gap: var(--gap);
+	height: 100vh;
+	overflow: auto;
+	border: 30px solid white;
+	align-items: start;
+	justify-content: start;
+	position: relative;
+}
+
+#paintings.grid {
+	--gap: 30px;
+
+	grid-auto-rows: 50%;
+	grid-template-columns: repeat(var(--columns), 1fr);
+}
+
+#paintings:not(.grid) {
+	grid-template-rows: 1fr;
+}
+
+.painting .small {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.painting .large {
+	width: 100%;
+	max-height: 80vh;
+	height: auto;
+	display: block;
+	object-fit: contain;
+	object-position: 0 0;
+	margin-bottom: 20px;
+}
+
+#paintings.grid .painting h2,
+#paintings.grid .painting h3,
+#paintings.grid .painting time,
+#paintings.grid .painting .large {
+	display: none;
+}
+
+#paintings:not(.grid) .painting .small {
+	display: none;
+}
+
+.painting {
+	display: block;
+}
+
+.painting h3 {
+	font-weight: 500;
+}
+
+/* Footer */
+footer {
+	padding: 30px 0;
+	text-align: right;
+}
+
+@media all and (max-width: 700px) {
+	body {
+		grid-template-areas: "author" "view-options" "paintings" "footer";
+		grid-template-columns: 100vw;
+		grid-template-rows: auto;
+	}
+
+	#paintings {
+		border: 15px solid white;
+		height: auto;
+	}
+
+	#paintings.grid {
+		--gap: 15px;
+
+		grid-auto-rows: 50vh;
+	}
+
+	aside {
+		width: 100%;
+	}
+
+	.view-options,
+	footer {
+		padding: 10px 30px;
+	}
+
+	footer {
+		padding-bottom: 40px;
+	}
+}
