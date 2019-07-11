@@ -135,6 +135,7 @@ aside h1 span {
 
 .painting {
 	display: block;
+	height: 100%;
 }
 
 .painting h3 {

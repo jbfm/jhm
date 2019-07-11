@@ -66,9 +66,9 @@ const setViewOptions = () => {
 		document.querySelector("#view-details").classList.add("active");
 		container.classList.remove("grid");
 
-		container.scrollTop = document.querySelector(
-			decodeURIComponent(location.hash)
-		).offsetTop;
+		document.querySelector(decodeURIComponent(location.hash)).scrollIntoView({
+			behavior: "smooth"
+		});
 	} else {
 		document.querySelector("#view-list").classList.add("active");
 		container.classList.add("grid");
