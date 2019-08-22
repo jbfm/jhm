@@ -1,104 +1,110 @@
 [
-  {
-    "filename": "DSC_2134.jpg",
-    "title": "Klotter",
-    "description": "60x80cm",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2141.jpg",
-    "title": "Bukett",
-    "description": "",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2155.jpg",
-    "title": "Sverige Brinner",
-    "description": "100x100cm",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2156.jpg",
-    "title": "Eurovision 2019",
-    "description": "80x100cm",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2161.jpg",
-    "title": "Sven",
-    "description": "",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2164.jpg",
-    "title": "Barba",
-    "description": "",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2166.jpg",
-    "title": "Tuggummi",
-    "description": "",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2167.jpg",
-    "title": "Överflöd",
-    "description": "",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2170.jpg",
-    "title": "Sant Joan",
-    "description": "",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2172.jpg",
-    "title": "Bicycle",
-    "description": "",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2181.jpg",
-    "title": "Storm",
-    "description": "50x50cm",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2184.jpg",
-    "title": "Bris",
-    "description": "50x50cm",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2189.jpg",
-    "title": "Pirr",
-    "description": "70x70cm",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2191.jpg",
-    "title": "Observer",
-    "description": "70x70cm",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2196.jpg",
-    "title": "Jazz",
-    "description": "",
-    "date": "2019"
-  },
-  {
-    "filename": "DSC_2200.jpg",
-    "title": "First",
-    "description": "40x120cm",
-    "date": "2018"
-  },
-  {
-    "filename": "DSC_2205.jpg",
-    "title": "Cat 1",
-    "description": "",
-    "date": "2019"
-  }
+	{
+		"filename": "DSC_2213.jpg",
+		"title": "****",
+		"description": "100x100cm. Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2134.jpg",
+		"title": "Klotter",
+		"description": "60x80cm. Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2141.jpg",
+		"title": "Bukett",
+		"description": "Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2155.jpg",
+		"title": "Sverige Brinner",
+		"description": "100x100cm. Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2156.jpg",
+		"title": "Eurovision 2019",
+		"description": "80x100cm. Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2161.jpg",
+		"title": "Sven",
+		"description": "Acrylic on MDF.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2164.jpg",
+		"title": "Barba",
+		"description": "Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2166.jpg",
+		"title": "Tuggummi",
+		"description": "Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2167.jpg",
+		"title": "Överflöd",
+		"description": "Acrylic on paper.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2170.jpg",
+		"title": "Sant Joan",
+		"description": "Acrylic on paper.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2172.jpg",
+		"title": "Bicycle",
+		"description": ". Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2181.jpg",
+		"title": "Storm",
+		"description": "50x50cm. Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2184.jpg",
+		"title": "Bris",
+		"description": "50x50cm. Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2189.jpg",
+		"title": "Pirr",
+		"description": "70x70cm. Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2191.jpg",
+		"title": "Observer",
+		"description": "70x70cm. Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2196.jpg",
+		"title": "Jazz",
+		"description": "Acrylic marker on paper.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2205.jpg",
+		"title": "Cat 1",
+		"description": "Acrylic on MDF.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2200.jpg",
+		"title": "First",
+		"description": "40x120cm. Acrylic on canvas.",
+		"date": "2018"
+	}
 ]
