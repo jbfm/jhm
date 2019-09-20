@@ -1,14 +1,38 @@
 [
 	{
-		"filename": "DSC_2213.jpg",
+		"filename": "DSC_2223.jpg",
+		"title": "2",
+		"description": "60x20cm. Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2220.jpg",
 		"title": "1",
+		"description": "60x20cm. Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2232.jpg",
+		"title": "Korallrev 2",
+		"description": "50x70cm. Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2219.jpg",
+		"title": "Korallrev 1",
+		"description": "60x80cm. Acrylic on canvas.",
+		"date": "2019"
+	},
+	{
+		"filename": "DSC_2213.jpg",
+		"title": "Amazonas",
 		"description": "100x100cm. Acrylic on canvas.",
 		"date": "2019"
 	},
 	{
 		"filename": "DSC_2134.jpg",
 		"title": "Klotter",
-		"description": "60x80cm. Acrylic on canvas.",
+		"description": "80x60cm. Acrylic on canvas.",
 		"date": "2019"
 	},
 	{
@@ -104,7 +128,7 @@
 	{
 		"filename": "DSC_2200.jpg",
 		"title": "First",
-		"description": "40x120cm. Acrylic on canvas.",
+		"description": "120x40cm. Acrylic on canvas.",
 		"date": "2018"
 	}
 ]
