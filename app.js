@@ -19,20 +19,29 @@ const setHeight = item => {
 	smallImage.complete ? set() : (smallImage.onload = set);
 };
 
-const item = ({ filename, title, description, date }) => `<a href="#${createID(
-	title
-)}" class="painting" id="${createID(title)}">
-	<img src="./paintings/large/${filename}" alt="${title}, Large Size" id="large-${createID(
+const item = ({ filename, title, description, date, status, price }) => `
+<div class="painting ${status}" data-price="${price}">
+	<a href="#${createID(title)}" id="${createID(title)}">
+		<img src="./paintings/large/${filename}" alt="${title}, Large Size" id="large-${createID(
 	title
 )}" class="large" />
-	<img src="./paintings/small/${filename}" alt="${title}, Small Size" id="small-${createID(
+		<img src="./paintings/small/${filename}" alt="${title}, Small Size" id="small-${createID(
 	title
 )}" class="small" />
+	</a>
 
-	<h2>${title}</h2>
-	<h3>${description}</h3>
-	<time datetime="${new Date(Date.parse(date)).toISOString()}">${date}</time>
-</a>`;
+		<h2 class="title">${title}</h2>
+		<h3>${description}</h3>
+		${
+			status !== "sold" && price > 0
+				? `<div class="price">${(price / 100).toFixed(
+						0
+				  )}SEK <a href="mailto:hello@hellgrenmick.se?subject=${title}">BUY ME</a></div>`
+				: ""
+		}
+		<time datetime="${new Date(Date.parse(date)).toISOString()}">${date}</time>
+</div>
+`;
 
 const renderItems = data =>
 	(container.innerHTML = data.map(i => item(i)).join(""));
@@ -62,17 +71,23 @@ const setViewOptions = () => {
 		a.classList.remove("active");
 	}
 
-	if (location.hash.length > 0) {
+	container.classList.remove("view-sale");
+
+	if (location.hash.length > 0 && location.hash !== "#for-sale") {
 		document.querySelector("#view-details").classList.add("active");
 		container.classList.remove("grid");
 
 		document.querySelector(decodeURIComponent(location.hash)).scrollIntoView({
 			behavior: "smooth"
 		});
+	} else if (location.hash === "#for-sale") {
+		document.querySelector("#view-sale").classList.add("active");
+		container.classList.add("grid");
+		container.classList.add("view-sale");
+		container.scrollTop = 0;
 	} else {
 		document.querySelector("#view-list").classList.add("active");
 		container.classList.add("grid");
-
 		container.scrollTop = 0;
 	}
 
