@@ -1,134 +1,242 @@
 [
 	{
+		"filename": "DSC_2237.jpg",
+		"title": "Jenny",
+		"description": "70x50cm. Acrylic on canvas.",
+		"date": "2019",
+		"status": "sold",
+		"price": 0
+	},
+	{
+		"filename": "DSC_2256.jpg",
+		"title": "Tistel",
+		"description": "70x50cm. Acrylic on canvas.",
+		"date": "2019",
+		"status": "",
+		"price": 150000
+	},
+	{
+		"filename": "DSC_2319.jpg",
+		"title": "Konfetti",
+		"description": "50x50xm. Acrylic on canvas.",
+		"date": "2019",
+		"status": "",
+		"price": 130000
+	},
+	{
+		"filename": "DSC_2323.jpg",
+		"title": "Smällkaramell",
+		"description": "50x50xm. Acrylic on canvas.",
+		"date": "2019",
+		"status": "",
+		"price": 130000
+	},
+	{
+		"filename": "DSC_2326.jpg",
+		"title": "Algblom",
+		"description": "80x80cm. Acrylic on canvas.",
+		"date": "2019",
+		"status": "",
+		"price": 200000
+	},
+	{
+		"filename": "DSC_2328.jpg",
+		"title": "Ytspänning",
+		"description": "80x80cm. Acrylic on canvas.",
+		"date": "2019",
+		"status": "",
+		"price": 200000
+	},
+	{
+		"filename": "DSC_2336.jpg",
+		"title": "Festival",
+		"description": "80x80cm. Acrylic on canvas.",
+		"date": "2019",
+		"status": "",
+		"price": 200000
+	},
+	{
+		"filename": "DSC_2339.jpg",
+		"title": "Upplöst",
+		"description": "80x80cm. Acrylic on canvas.",
+		"date": "2019",
+		"status": "",
+		"price": 200000
+	},
+	{
 		"filename": "DSC_2223.jpg",
-		"title": "2",
+		"title": "Halva dig",
 		"description": "60x20cm. Acrylic on canvas.",
-		"date": "2019"
+		"date": "2019",
+		"status": "",
+		"price": 50000
 	},
 	{
 		"filename": "DSC_2220.jpg",
-		"title": "1",
+		"title": "Halva mig",
 		"description": "60x20cm. Acrylic on canvas.",
-		"date": "2019"
+		"date": "2019",
+		"status": "",
+		"price": 50000
 	},
 	{
 		"filename": "DSC_2232.jpg",
 		"title": "Korallrev 2",
 		"description": "50x70cm. Acrylic on canvas.",
-		"date": "2019"
+		"date": "2019",
+		"status": "sold",
+		"price": 150000
 	},
 	{
 		"filename": "DSC_2219.jpg",
 		"title": "Korallrev 1",
 		"description": "60x80cm. Acrylic on canvas.",
-		"date": "2019"
+		"date": "2019",
+		"status": "sold",
+		"price": 0
 	},
 	{
 		"filename": "DSC_2213.jpg",
 		"title": "Amazonas",
 		"description": "100x100cm. Acrylic on canvas.",
-		"date": "2019"
+		"date": "2019",
+		"status": "",
+		"price": 500000
 	},
 	{
 		"filename": "DSC_2134.jpg",
 		"title": "Klotter",
 		"description": "80x60cm. Acrylic on canvas.",
-		"date": "2019"
+		"date": "2019",
+		"status": "",
+		"price": 600000
 	},
 	{
 		"filename": "DSC_2141.jpg",
 		"title": "Bukett",
 		"description": "Acrylic on canvas.",
-		"date": "2019"
+		"date": "2019",
+		"status": "",
+		"price": 150000
 	},
 	{
 		"filename": "DSC_2155.jpg",
 		"title": "Sverige Brinner",
 		"description": "100x100cm. Acrylic on canvas.",
-		"date": "2019"
+		"date": "2019",
+		"status": "",
+		"price": 600000
 	},
 	{
 		"filename": "DSC_2156.jpg",
 		"title": "Eurovision 2019",
 		"description": "80x100cm. Acrylic on canvas.",
-		"date": "2019"
+		"date": "2019",
+		"status": "",
+		"price": 0
 	},
 	{
 		"filename": "DSC_2161.jpg",
 		"title": "Sven",
-		"description": "Acrylic on MDF.",
-		"date": "2019"
+		"description": "Acrylic on MDF. No frame.",
+		"date": "2019",
+		"status": "",
+		"price": 80000
 	},
 	{
 		"filename": "DSC_2164.jpg",
 		"title": "Barba",
-		"description": "Acrylic on canvas.",
-		"date": "2019"
+		"description": "Acrylic on canvas. No frame.",
+		"date": "2019",
+		"status": "",
+		"price": 80000
 	},
 	{
 		"filename": "DSC_2166.jpg",
 		"title": "Tuggummi",
-		"description": "Acrylic on canvas.",
-		"date": "2019"
+		"description": "Acrylic on canvas. No frame.",
+		"date": "2019",
+		"status": "",
+		"price": 80000
 	},
 	{
 		"filename": "DSC_2167.jpg",
 		"title": "Överflöd",
 		"description": "Acrylic on paper.",
-		"date": "2019"
+		"date": "2019",
+		"status": "",
+		"price": 0
 	},
 	{
 		"filename": "DSC_2170.jpg",
 		"title": "Sant Joan",
 		"description": "Acrylic on paper.",
-		"date": "2019"
+		"date": "2019",
+		"status": "",
+		"price": 0
 	},
 	{
 		"filename": "DSC_2172.jpg",
 		"title": "Bicycle",
-		"description": ". Acrylic on canvas.",
-		"date": "2019"
+		"description": ". Acrylic on canvas.  No frame.",
+		"date": "2019",
+		"status": "",
+		"price": 80000
 	},
 	{
 		"filename": "DSC_2181.jpg",
 		"title": "Storm",
 		"description": "50x50cm. Acrylic on canvas.",
-		"date": "2019"
+		"date": "2019",
+		"status": "",
+		"price": 0
 	},
 	{
 		"filename": "DSC_2184.jpg",
 		"title": "Bris",
 		"description": "50x50cm. Acrylic on canvas.",
-		"date": "2019"
+		"date": "2019",
+		"status": "",
+		"price": 0
 	},
 	{
 		"filename": "DSC_2189.jpg",
 		"title": "Pirr",
 		"description": "70x70cm. Acrylic on canvas.",
-		"date": "2019"
+		"date": "2019",
+		"status": "",
+		"price": 400000
 	},
 	{
 		"filename": "DSC_2191.jpg",
 		"title": "Observer",
 		"description": "70x70cm. Acrylic on canvas.",
-		"date": "2019"
+		"date": "2019",
+		"status": "",
+		"price": 150000
 	},
 	{
 		"filename": "DSC_2196.jpg",
 		"title": "Jazz",
-		"description": "Acrylic marker on paper.",
-		"date": "2019"
+		"description": "Acrylic marker on paper. No frame.",
+		"date": "2019",
+		"status": "",
+		"price": 120000
 	},
 	{
 		"filename": "DSC_2205.jpg",
 		"title": "Cat 1",
 		"description": "Acrylic on MDF.",
-		"date": "2019"
+		"date": "2019",
+		"status": "",
+		"price": 0
 	},
 	{
 		"filename": "DSC_2200.jpg",
 		"title": "First",
 		"description": "120x40cm. Acrylic on canvas.",
-		"date": "2018"
+		"date": "2018",
+		"status": "",
+		"price": 0
 	}
 ]
