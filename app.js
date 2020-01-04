@@ -25,15 +25,28 @@ const setHeight = item => {
 };
 
 const item = ({ filename, title, description, date, status, price }) => `
-<div class="painting ${status}" data-price="${price}">
-	<a href="#${createID(title)}" id="${createID(title)}">
-		<img src="./paintings/large/${filename}" alt="${title}, Large Size" id="large-${createID(
-	title
-)}" class="large" />
-		<img src="./paintings/small/${filename}" alt="${title}, Small Size" id="small-${createID(
-	title
-)}" class="small" />
-	</a>
+	<div class="painting ${status}" data-price="${price}">
+		<a href="#${createID(title)}" id="${createID(title)}">
+			<picture>
+				<source srcset="./paintings/large/${filename}.webp" type="image/webp" />
+				<img
+					src="./paintings/large/${filename}.jpg"
+					alt="${title}, Large Size"
+					id="large-${createID(title)}"
+					class="large"
+				/>
+			</picture>
+
+			<picture>
+				<source srcset="./paintings/small/${filename}.webp" type="image/webp" />
+				<img
+					src="./paintings/small/${filename}.jpg"
+					alt="${title}, Small Size"
+					id="small-${createID(title)}"
+					class="small"
+				/>
+			</picture>
+		</a>
 
 		<h2 class="title">${title}</h2>
 		<h3>${description}</h3>
@@ -45,7 +58,7 @@ const item = ({ filename, title, description, date, status, price }) => `
 				: ""
 		}
 		<time datetime="${new Date(Date.parse(date)).toISOString()}">${date}</time>
-</div>
+	</div>
 `;
 
 const renderItems = data =>
