@@ -1,6 +1,11 @@
 let data = [];
 let resizeTimer;
 
+const num = new Intl.NumberFormat(navigator.language || "en-US", {
+	style: "currency",
+	currency: "SEK"
+});
+
 const container = document.querySelector("#paintings");
 
 const createID = title => title.toLowerCase().replace(" ", "-");
@@ -34,9 +39,9 @@ const item = ({ filename, title, description, date, status, price }) => `
 		<h3>${description}</h3>
 		${
 			status !== "sold" && price > 0
-				? `<div class="price">${(price / 100).toFixed(
-						0
-				  )}SEK <a href="mailto:hello@hellgrenmick.se?subject=${title}">BUY ME</a></div>`
+				? `<div class="price">${num.format(
+						price / 100
+				  )} <a href="mailto:hello@hellgrenmick.se?subject=${title}">BUY ME</a></div>`
 				: ""
 		}
 		<time datetime="${new Date(Date.parse(date)).toISOString()}">${date}</time>
