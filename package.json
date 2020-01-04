@@ -1,17 +1,17 @@
 {
-  "name": "JHM",
-  "version": "1.0.0",
-  "description": "Julia Hellgren & John Mick",
-  "main": "index.js",
-  "repository": "git@github.com:jbfm/jhm.git",
-  "author": "John Mick <john@jmick.se>",
-  "license": "MIT",
-  "dependencies": {
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2"
-  },
-  "scripts": {
-    "dev": "webpack-dev-server"
-  }
+	"name": "JHM",
+	"version": "1.0.0",
+	"description": "Julia Hellgren & John Mick",
+	"main": "index.js",
+	"repository": "git@github.com:jbfm/jhm.git",
+	"author": "John Mick <john@jmick.se>",
+	"license": "MIT",
+	"devDependencies": {
+		"webpack": "^4.35.3",
+		"webpack-cli": "^3.3.5",
+		"webpack-dev-server": "^3.7.2"
+	},
+	"scripts": {
+		"dev": "webpack-dev-server"
+	}
 }
