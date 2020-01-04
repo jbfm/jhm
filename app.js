@@ -77,6 +77,7 @@ const setViewOptions = () => {
 	}
 
 	container.classList.remove("view-sale");
+	container.classList.remove("grid");
 
 	if (location.hash.length > 0 && location.hash !== "#for-sale") {
 		document.querySelector("#view-details").classList.add("active");
@@ -90,15 +91,11 @@ const setViewOptions = () => {
 		container.classList.add("grid");
 		container.classList.add("view-sale");
 		container.scrollTop = 0;
-	} else {
+	} else if (location.hash !== "#view-detailed") {
 		document.querySelector("#view-list").classList.add("active");
 		container.classList.add("grid");
 		container.scrollTop = 0;
 	}
-
-	document.querySelector("#view-details a").href = `#${createID(
-		data[0].title
-	)}`;
 };
 
 const init = async () => {
