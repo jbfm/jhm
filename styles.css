@@ -1,3 +1,24 @@
+:root {
+	--aside-width: 300px;
+	--columns: 5;
+
+	--text-color: black;
+	--background-color: rgb(232, 230, 230);
+	--sold-color: orange;
+	--nav-color: rgb(80, 80, 80);
+	--nav-active-color: rgb(30, 30, 30);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text-color: rgb(245, 245, 245);
+		--background-color: rgb(22, 20, 20);
+		--sold-color: orange;
+		--nav-color: rgb(150, 150, 150);
+		--nav-active-color: rgb(200, 200, 200);
+	}
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,14 +29,9 @@
 a,
 a:visited,
 a:active {
-	color: black;
+	color: var(--text-color);
 	text-decoration: none;
 	outline: none;
-}
-
-:root {
-	--aside-width: 300px;
-	--columns: 5;
 }
 
 @media all and (max-width: 980px) {
@@ -34,7 +50,8 @@ body {
 	grid-template-columns: var(--aside-width) 1fr;
 	grid-template-rows: auto 1fr auto;
 	align-content: start;
-	background: rgb(232, 230, 230);
+	background: var(--background-color);
+	color: var(--text-color);
 }
 
 /* View options */
@@ -50,11 +67,11 @@ body {
 }
 
 .view-options a {
-	color: rgb(80, 80, 80);
+	color: var(--nav-color);
 }
 
 .view-options .active a {
-	color: rgb(30, 30, 30);
+	color: var(--nav-active-color);
 	font-weight: 600;
 	text-decoration: underline;
 }
@@ -155,7 +172,7 @@ aside h1 span {
 	vertical-align: middle;
 	width: 0.9rem;
 	height: 0.9rem;
-	background-color: orange;
+	background-color: var(--sold-color);
 	border-radius: 50%;
 	margin-left: 5px;
 	box-shadow: inset 0 -1px 0px rgba(0, 0, 0, 0.15);
