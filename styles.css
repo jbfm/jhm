@@ -220,6 +220,9 @@ footer {
 	.view-options,
 	footer {
 		padding: 10px 30px;
+		justify-content: center;
+		justify-items: center;
+		grid-auto-columns: 1fr;
 	}
 
 	footer {
