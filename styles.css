@@ -9,6 +9,13 @@
 	--nav-active-color: rgb(30, 30, 30);
 }
 
+@media all and (max-width: 980px) {
+	:root {
+		--columns: 3;
+		--aside-width: 250px;
+	}
+}
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--text-color: rgb(245, 245, 245);
@@ -32,13 +39,6 @@ a:active {
 	color: var(--text-color);
 	text-decoration: none;
 	outline: none;
-}
-
-@media all and (max-width: 980px) {
-	:root {
-		--columns: 3;
-		--aside-width: 250px;
-	}
 }
 
 body {
