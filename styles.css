@@ -5,6 +5,7 @@
 	--text-color: black;
 	--background-color: rgb(232, 230, 230);
 	--sold-color: orange;
+	--private-color: rgb(22, 170, 67);
 	--nav-color: rgb(80, 80, 80);
 	--nav-active-color: rgb(30, 30, 30);
 }
@@ -21,6 +22,7 @@
 		--text-color: rgb(245, 245, 245);
 		--background-color: rgb(22, 20, 20);
 		--sold-color: orange;
+		--private-color: rgb(22, 170, 67);
 		--nav-color: rgb(150, 150, 150);
 		--nav-active-color: rgb(200, 200, 200);
 	}
@@ -123,6 +125,7 @@ aside h1 span {
 }
 
 #paintings.grid.view-sale .painting.sold,
+#paintings.grid.view-sale .painting.private,
 #paintings.grid.view-sale .painting[data-price="0"] {
 	display: none;
 }
@@ -173,6 +176,18 @@ aside h1 span {
 	width: 0.9rem;
 	height: 0.9rem;
 	background-color: var(--sold-color);
+	border-radius: 50%;
+	margin-left: 5px;
+	box-shadow: inset 0 -1px 0px rgba(0, 0, 0, 0.15);
+}
+
+.painting.private .title::after {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 0.9rem;
+	height: 0.9rem;
+	background-color: var(--private-color);
 	border-radius: 50%;
 	margin-left: 5px;
 	box-shadow: inset 0 -1px 0px rgba(0, 0, 0, 0.15);
