@@ -72,22 +72,6 @@
 		"price": 200000
 	},
 	{
-		"filename": "DSC_2223",
-		"title": "Halva dig",
-		"description": "60x20cm. Acrylic on canvas.",
-		"date": "2019",
-		"status": "",
-		"price": 50000
-	},
-	{
-		"filename": "DSC_2220",
-		"title": "Halva mig",
-		"description": "60x20cm. Acrylic on canvas.",
-		"date": "2019",
-		"status": "",
-		"price": 50000
-	},
-	{
 		"filename": "DSC_2232",
 		"title": "Korallrev 2",
 		"description": "50x70cm. Acrylic on canvas.",
@@ -144,24 +128,8 @@
 		"price": 0
 	},
 	{
-		"filename": "DSC_2161",
-		"title": "Sven",
-		"description": "Acrylic on MDF. No frame.",
-		"date": "2019",
-		"status": "",
-		"price": 80000
-	},
-	{
 		"filename": "DSC_2164",
 		"title": "Barba",
-		"description": "Acrylic on canvas. No frame.",
-		"date": "2019",
-		"status": "",
-		"price": 80000
-	},
-	{
-		"filename": "DSC_2166",
-		"title": "Tuggummi",
 		"description": "Acrylic on canvas. No frame.",
 		"date": "2019",
 		"status": "",
