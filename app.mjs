@@ -27,25 +27,8 @@ const setHeight = item => {
 const item = ({ filename, title, description, date, status, price }) => `
 	<div class="painting ${status}" data-price="${price}">
 		<a href="#${createID(title)}" id="${createID(title)}">
-			<picture>
-				<source srcset="./paintings/large/${filename}.webp" type="image/webp" />
-				<img
-					src="./paintings/large/${filename}.jpg"
-					alt="${title}, Large Size"
-					id="large-${createID(title)}"
-					class="large"
-				/>
-			</picture>
-
-			<picture>
-				<source srcset="./paintings/small/${filename}.webp" type="image/webp" />
-				<img
-					src="./paintings/small/${filename}.jpg"
-					alt="${title}, Small Size"
-					id="small-${createID(title)}"
-					class="small"
-				/>
-			</picture>
+			<img id="large-${createID(title)}" src="/paintings/large/${filename}.webp" alt="${title}" loading="lazy" type="image/webp" class="large" />
+			<img id="small-${createID(title)}" src="/paintings/small/${filename}.webp" alt="${title}" loading="lazy" type="image/webp" class="small" />
 		</a>
 
 		<h2 class="title">${title}</h2>
@@ -66,14 +49,12 @@ const renderItems = data =>
 
 const fetchData = async () => {
 	const req = await fetch("./paintings/list.json");
-
 	if (!req.ok) {
 		return;
 	}
 
 	data = await req.json();
 	renderItems(data);
-
 	data.forEach(setHeight);
 
 	window.addEventListener("resize", () => {
@@ -85,14 +66,17 @@ const fetchData = async () => {
 };
 
 const setViewOptions = () => {
-	if ((a = document.querySelector(".view-options .active"))) {
+	const a = document.querySelector(".view-options .active")
+	if (a) {
 		a.classList.remove("active");
 	}
 
 	container.classList.remove("view-sale");
 	container.classList.remove("grid");
 
-	if (location.hash.length > 0 && location.hash !== "#for-sale") {
+	const viewOptions = ['#for-sale', '#view-detailed']
+
+	if (location.hash.length > 0 && !viewOptions.includes(location.hash)) {
 		document.querySelector("#view-details").classList.add("active");
 		container.classList.remove("grid");
 
