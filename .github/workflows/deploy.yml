@@ -14,5 +14,6 @@ jobs:
             - name: "rsync"
               run: sshpass -p "${{ secrets.SSHPassword }}" \
                   rsync --recursive \
-                  --files-from=./syncfiles \
-                  . 134609_jm@ssh.binero.se:/storage/content/09/134609/hellgrenmick.se/public_html
+                  --files-from=$GITHUB_WORKSPACE/syncfiles \
+                  --verbose \
+                  $GITHUB_WORKSPACE 134609_jm@ssh.binero.se:/storage/content/09/134609/hellgrenmick.se/public_html
