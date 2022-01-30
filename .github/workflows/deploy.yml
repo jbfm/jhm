@@ -10,10 +10,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-
+            - name: "ssh key setup"
+              run: |
+                  mkdir ~/.ssh
+                  ssh-keyscan -H ssh.binero.se > ~/.ssh/known_hosts
+                  cat ~/.ssh/known_hosts
             - name: "rsync"
-              run: sshpass -p "${{ secrets.SSHPassword }}" \
-                  rsync --recursive \
-                  --files-from=$GITHUB_WORKSPACE/syncfiles \
-                  --verbose \
-                  $GITHUB_WORKSPACE 134609_jm@ssh.binero.se:/storage/content/09/134609/hellgrenmick.se/public_html
+              run: rsync --recursive --rsh="sshpass -p ${{ secrets.SSHPASSWORD }} ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/home/runner/.ssh/known_hosts -l 134609_jm" --files-from=$GITHUB_WORKSPACE/syncfiles --verbose $GITHUB_WORKSPACE 134609_jm@ssh.binero.se:/storage/content/09/134609/hellgrenmick.se/public_html
